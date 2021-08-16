@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { joiResolver } from "@hookform/resolvers/joi";
 import Joi from "joi";
 import { useMutation } from "react-query";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 import { signUp } from "../API/API";
 
@@ -31,12 +31,12 @@ const SignupForm = () => {
 
   const mutation = useMutation(signUp);
 
-  const history = useHistory();
+  // const history = useHistory();
 
   // To submit data on server
   const onSubmit = async (data) => {
     await mutation.mutate(data);
-    history.push("/checkout/cart");
+    // history.push("/checkout/cart");
   };
 
   console.log(errors);
