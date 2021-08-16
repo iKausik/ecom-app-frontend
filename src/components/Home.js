@@ -2,7 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Instagram, Twitter, Facebook } from "@material-ui/icons";
 
-import hero from "../assets/hero.svg";
+// import hero from "../assets/hero.svg";
+import hero from "../assets/hero.png";
 import img1 from "../assets/img1.svg";
 import img2 from "../assets/img2.svg";
 import img3 from "../assets/img3.svg";
