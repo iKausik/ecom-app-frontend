@@ -90,7 +90,7 @@ const Header = () => {
           <Close />
         </IconButton>
       </div>
-      <LoginForm />
+      <LoginForm loginFormClose={handleLoginFormClose} />
     </div>
   );
   const signupFormbody = (
@@ -100,7 +100,7 @@ const Header = () => {
           <Close />
         </IconButton>
       </div>
-      <SignupForm />
+      <SignupForm signupFormClose={handleSignupFormClose} />
     </div>
   );
 
@@ -226,7 +226,7 @@ const Header = () => {
               {localStorage.getItem("token") ? (
                 <Link onClick={logMeOut}>SIGN OUT</Link>
               ) : (
-                <div>
+                <>
                   <Link onClick={handleLoginFormOpen}>LOGIN</Link>
                   <Modal open={loginFormOpen} onClose={handleLoginFormClose}>
                     {loginFormbody}
@@ -238,7 +238,7 @@ const Header = () => {
                   <Modal open={signupFormOpen} onClose={handleSignupFormClose}>
                     {signupFormbody}
                   </Modal>
-                </div>
+                </>
               )}
             </div>
           </div>

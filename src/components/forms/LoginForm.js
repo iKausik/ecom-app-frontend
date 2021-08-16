@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { joiResolver } from "@hookform/resolvers/joi";
 import Joi from "joi";
 import { useMutation } from "react-query";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 import { login } from "../API/API";
 
@@ -16,7 +16,7 @@ const schema = Joi.object({
   password: Joi.string().min(6).required(),
 });
 
-const LoginForm = () => {
+const LoginForm = ({ loginFormClose }) => {
   const {
     register,
     handleSubmit,
@@ -25,12 +25,12 @@ const LoginForm = () => {
 
   const mutation = useMutation(login);
 
-  const history = useHistory();
+  // const history = useHistory();
 
   // To submit data on server
   const onSubmit = async (data) => {
     await mutation.mutate(data);
-    history.push("/shop/all");
+    // history.push("/shop/all");
     window.location.reload();
   };
 
@@ -64,7 +64,9 @@ const LoginForm = () => {
         <p>{errors.password?.message}</p>
         {/* <br /> */}
 
-        <Button type="submit">LOGIN</Button>
+        <Button type="submit" onClick={loginFormClose}>
+          LOGIN
+        </Button>
       </form>
     </div>
   );
