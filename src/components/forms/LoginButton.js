@@ -47,7 +47,7 @@ const LoginButton = () => {
           <Close />
         </IconButton>
       </div>
-      <LoginForm loginFormClose={handleClose} />
+      <LoginForm />
     </div>
   );
 

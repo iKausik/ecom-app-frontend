@@ -22,7 +22,7 @@ const schema = Joi.object({
   password: Joi.string().min(6).required(),
 });
 
-const SignupForm = ({ signupFormClose }) => {
+const SignupForm = () => {
   const {
     register,
     handleSubmit,
@@ -101,9 +101,7 @@ const SignupForm = ({ signupFormClose }) => {
         <p>{errors.password?.message}</p>
         {/* <br /> */}
 
-        <Button type="submit" onClick={signupFormClose}>
-          SIGN UP
-        </Button>
+        <Button type="submit">SIGN UP</Button>
       </form>
     </div>
   );
