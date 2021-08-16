@@ -30,6 +30,7 @@ const LoginForm = ({ loginFormClose }) => {
   // To submit data on server
   const onSubmit = async (data) => {
     await mutation.mutate(data);
+    await loginFormClose;
     // history.push("/shop/all");
     window.location.reload();
   };
@@ -64,9 +65,7 @@ const LoginForm = ({ loginFormClose }) => {
         <p>{errors.password?.message}</p>
         {/* <br /> */}
 
-        <Button type="submit" onClick={loginFormClose}>
-          LOGIN
-        </Button>
+        <Button type="submit">LOGIN</Button>
       </form>
     </div>
   );
