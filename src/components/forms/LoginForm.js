@@ -30,10 +30,11 @@ const LoginForm = () => {
   // To submit data on server
   const onSubmit = async (data) => {
     await mutation.mutate(data);
-    // eslint-disable-next-line no-unused-expressions
-    // loginFormClose;
-    // history.push("/shop/all");
-    // window.location.reload();
+
+    setTimeout(() => {
+      // history.push("/shop/all");
+      window.location.reload();
+    }, 3000);
   };
 
   console.log(errors);

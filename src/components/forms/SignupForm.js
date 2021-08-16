@@ -36,8 +36,11 @@ const SignupForm = () => {
   // To submit data on server
   const onSubmit = async (data) => {
     await mutation.mutate(data);
-    // history.push("/checkout/cart");
-    await window.location.reload();
+
+    setTimeout(() => {
+      // history.push("/checkout/cart");
+      window.location.reload();
+    }, 3000);
   };
 
   console.log(errors);
