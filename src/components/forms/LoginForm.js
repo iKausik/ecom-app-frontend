@@ -33,7 +33,7 @@ const LoginForm = () => {
     // eslint-disable-next-line no-unused-expressions
     // loginFormClose;
     // history.push("/shop/all");
-    window.location.reload();
+    await window.location.reload();
   };
 
   console.log(errors);

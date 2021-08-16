@@ -37,7 +37,7 @@ const SignupForm = () => {
   const onSubmit = async (data) => {
     await mutation.mutate(data);
     // history.push("/checkout/cart");
-    window.location.reload();
+    await window.location.reload();
   };
 
   console.log(errors);
