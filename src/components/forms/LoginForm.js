@@ -16,7 +16,7 @@ const schema = Joi.object({
   password: Joi.string().min(6).required(),
 });
 
-const LoginForm = ({ loginFormClose }) => {
+const LoginForm = () => {
   const {
     register,
     handleSubmit,
@@ -31,7 +31,7 @@ const LoginForm = ({ loginFormClose }) => {
   const onSubmit = async (data) => {
     await mutation.mutate(data);
     // eslint-disable-next-line no-unused-expressions
-    loginFormClose;
+    // loginFormClose;
     // history.push("/shop/all");
     window.location.reload();
   };

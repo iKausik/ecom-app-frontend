@@ -90,7 +90,7 @@ const Header = () => {
           <Close />
         </IconButton>
       </div>
-      <LoginForm loginFormClose={handleLoginFormClose} />
+      <LoginForm />
     </div>
   );
   const signupFormbody = (
