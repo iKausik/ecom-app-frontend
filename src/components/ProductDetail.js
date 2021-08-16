@@ -454,7 +454,10 @@ const ProductDetail = () => {
                                     size: 8,
                                     cart_image: product.image1,
                                   });
-                                  window.location.reload();
+
+                                  setTimeout(() => {
+                                    window.location.reload();
+                                  }, 2000);
                                 }
                               : () => history.push("/checkout/cart")
                           }
