@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Instagram, Twitter, LinkedIn } from "@material-ui/icons";
+import { Instagram, Twitter, LinkedIn, GitHub } from "@material-ui/icons";
 
 const Footer = () => {
   return (
@@ -13,12 +13,8 @@ const Footer = () => {
         <NavLink to="#">TERMS & CONDITIONS</NavLink>
       </div>
       <p class="bottomNavText">
-        <a
-          href="https://instagram.com/ikausik"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Instagram />
+        <a href="https://github.com/ikausik" target="_blank" rel="noreferrer">
+          <GitHub />
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://twitter.com/kausik47" target="_blank" rel="noreferrer">
@@ -31,6 +27,14 @@ const Footer = () => {
           rel="noreferrer"
         >
           <LinkedIn />
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a
+          href="https://instagram.com/ikausik"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Instagram />
         </a>
         <br />
         <br /> © {new Date().getFullYear()} Built by{" "}
