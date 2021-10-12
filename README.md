@@ -44,6 +44,6 @@ One of the main challenges I ran into was Authentication. This lead me to spend 
 
 At the end of the day, it was a great experience building the project, I had to learn plenty of new things, although I build it for my portfolio, it's almost a 90% production-grade application which can be put into live for public with a few tweak. In the next iteration I plan to clean some code and restructure the codebase.
 
-### License
+## License
 
 [GNU General Public License v3.0](./LICENSE).
