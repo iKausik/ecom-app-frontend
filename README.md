@@ -8,7 +8,7 @@ An e-commerce application for a fresh, colorful and minimalist look of Nike shop
 
 ![Product Page](https://raw.githubusercontent.com/iKausik/nike-shop-rebuild-frontend/master/src/assets/single-prod.png)
 
-![Product Page](https://raw.githubusercontent.com/iKausik/nike-shop-rebuild-frontend/master/src/assets/men-shoes.png)
+![Products List Page](https://raw.githubusercontent.com/iKausik/nike-shop-rebuild-frontend/master/src/assets/men-shoes.png)
 
 ## Installation and Setup Instructions
 
