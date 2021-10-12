@@ -30,15 +30,15 @@ To Visit App:
 
 ### What was the context for this project?
 
-    This was a 3 months long project built during May 2021 to Aug 2021. Project goals included building a simple yet extraordinary e-commerce web app using technologies like JavaScript, Node and React.
+This was a 3 months long project built during May 2021 to Aug 2021. Project goals included building a simple yet extraordinary e-commerce web app using technologies like JavaScript, Node and React.
 
 ### What did you set out to build?
 
-    Originally I wanted to build an application that allowed users to shop nike sneakers with a pleasant user experience and a easy payment experience using stripe. I started this process by building the API-Backend using `Node` & `ExpressJS` and using the `create-react-app` boilerplate for the frontend.
+Originally I wanted to build an application that allowed users to shop nike sneakers with a pleasant user experience and a easy payment experience using stripe. I started this process by building the API-Backend using `Node` & `ExpressJS` and using the `create-react-app` boilerplate for the frontend.
 
 ### Why was this project challenging and therefore a really good learning experience?
 
-     One of the main challenges I ran into was Authentication. This lead me to spend a few days on a research spike into OAuth, Auth0, JWT and many more things. But due to project time constraints, I finally decided to use JWT authentication system as of now.
+One of the main challenges I ran into was Authentication. This lead me to spend a few days on a research spike into OAuth, Auth0, JWT and many more things. But due to project time constraints, I finally decided to use JWT authentication system as of now.
 
 ### Conclusion
 
